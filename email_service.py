@@ -72,7 +72,7 @@ async def send_password_reset_email(to: str, reset_token: str) -> bool:
           Reset password →
         </a>
         <p style="color:rgba(255,255,255,.4);font-size:12px;margin-top:24px">
-          If you didn't request this, ignore this email.
+          If you didn't request the reset, ignore this email.
         </p>
     """)
     return await send_email(to, "Reset your WizImage password", html)
